@@ -1,3 +1,4 @@
+from main.views import show_main, create_news, show_news, show_xml
 """
 URL configuration for football_news project.
 
@@ -20,4 +21,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
+    path('xml/', show_xml, name='show_xml')
 ]
